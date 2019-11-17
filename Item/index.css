@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    padding: 80px 0;
+    height: 100vh;
+}
+
+.nav-top, .nav-bottom {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 60px;
+    background-color: rgb(187, 182, 182);
+}
+
+/*Possibly change to sticky header later on*/
+.nav-top {
+    top: 0;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-top > h1 {
+    cursor: pointer;
+}
+
+.nav-bottom {
+    bottom: 0;
+}
+
+.nav-bottom > .bottom_nav_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+
+.nav-bottom > .bottom_nav_wrapper > div {
+    width: 25%;
+    text-align: center;
+    background-color: grey;
+    padding: 10px 0;
+    cursor: pointer;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bottom > .bottom_nav_wrapper > div:nth-child(even) {
+    background-color:black;
+    color: white;
+}
+
+.item {
+    margin: 0 auto;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.note-content {
+    width: 100%;
+    background-color: grey;
+    min-height: 100px;
+    padding: 10px 15px;
+}
+
+.note-controller {
+    width: 100%;
+}
+
+.note-controller > button {
+    margin: 5px auto;
+    display: block;
+    
+}
